@@ -50,7 +50,7 @@ margin-bottom:15%;}
 }
 
 nav ul li{
-float:left;
+float:none;
  }
  
   
@@ -86,6 +86,14 @@ float:left;
      background:white;
      
 }
+
+.main h1{
+    font-weight:2000;
+    color: black;
+    background-color:white;
+    text-align:center;
+ 
+ }
     
 #about{
    border-top:solid;
@@ -96,13 +104,6 @@ float:left;
   }  
 
   
-}  
-
- h1{
-    font-weight:900;
-    color: black;
-    background-color:white;
- }
  
  h2{
  font-weight:bold;}
@@ -126,7 +127,7 @@ nav ul {
 /*Nav bar content*/ 
 
 nav li {
-    float: right;
+    float: left;
 }
 
 nav li a {
@@ -134,6 +135,7 @@ nav li a {
     color: white;
     padding: 15px 15px;
     text-decoration: none;
+    
 }
 
 /*Change the link color to #111 (black) on hover */
@@ -189,5 +191,7 @@ margin-bottom:150px;
 
 
 } 
+
+
 
 

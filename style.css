@@ -1,0 +1,266 @@
+
+/*------------------Formats the columns/rows-----------------*/
+/*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
+ 
+* {
+  box-sizing: border-box;
+  }
+
+[class*="col-"] {
+                float: left;
+                padding: 15px;   
+                }
+
+.row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+
+/*----------------------------Overall Page------------------*/
+
+/*Formats all the h1 text*/
+h1{
+   text-align:center;
+   background-color:#FFFFFF;
+   
+   }
+
+/*Formats all the h3 text*/
+h3{
+   font-style:italic;
+   }
+
+/*Formats the body of the webpage section*/
+body {
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 300;
+     border:double;
+     border-width:medium;
+     background-color:#FFFFFF;
+     max-width:960px;
+     } 
+ 
+
+
+/*----------------------------Navigation Bar------------------*/   
+/*Formats the navigation bar*/
+.menu ul {
+       border:solid;
+       border-width:thin;
+       list-style-type: none;
+       overflow: hidden;
+       background-color: #d5f5e3 ;
+       text-align:center;
+       position:relative;
+       margin:0px;
+       padding:0px;
+       
+       }
+
+.menu ul li {
+	      float:left;
+          }
+
+.menu ul li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding:15px;   
+            border:thin;   
+            }
+
+
+/*Changes the text color of the navigation bar on hover*/
+.menu ul li a:hover{
+	              color:white;
+                  }
+                  
+#header{
+     background-color:#CDCDCD;
+    }
+/*----------------------------About Section------------------*/   
+/*Formats the about section*/
+#about{
+       border-bottom:solid;
+       border-bottom-width:thin;
+       text-align:center; 
+       background-color:#CDCDCD; 
+       }  
+  
+
+/*----------------------------Work Section------------------*/   
+
+/*Formats the images to be responsive*/
+#image{   
+       width:100%;
+       padding-bottom:20px;
+      }
+
+#profile-image{   
+       width:100%;
+       border:solid;
+       border-width:thin;
+       background-color:#CDCDCD;
+       height:auto;
+      }      
+/*Places a line underneath the work section*/
+#work{
+      border-bottom:solid; 
+      border-bottom-width:thin;
+      background-color:#CDCDCD;
+      }
+
+/*Formats the projects view more button*/
+#projectbutton{
+               border-radius:25px;
+               text-align:center;
+               }
+
+/*----------------------------Contact Section------------------*/               
+#contact{
+         background-color:#CDCDCD; }
+         
+         
+#overall-objective{
+                   background-color:#CDCDCD;
+                   }
+#tasks-completed{
+                 background-color:#CDCDCD;
+                }
+#design-result{
+               background-color:#CDCDCD;
+              }      
+ 
+/*----------------------------Footer Section------------------*/      
+.footer {
+        background-color: #FFFFFF;
+        color: black;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+        }
+
+
+
+/*------------------------Media Queries------------------*/
+/*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
+
+/* Media queries for mobile phones: */
+@media screen and (max-width: 600px) {
+	.menu ul li{
+		        float: none;
+	            }
+    body{
+         margin:0px; 
+         min-width:300px;
+         border:none;
+         }
+    .menu ul{
+             border-top:solid;
+             border-bottom:solid;
+             border-bottom-width:thin;
+             border-top-width:thin;
+             }
+     #image{ display: block;
+             margin: auto;
+             width: 100%;
+      }
+
+}
+
+
+/* Media queries for tablets */
+@media only screen and (min-width: 600px)
+{
+    .col-m-1 {
+             width: 8.33%;
+             }
+    .col-m-2 {
+             width: 16.66%;
+             }
+    .col-m-3 {
+             width: 25%;
+             }
+    .col-m-4 {
+             width: 33.33%;
+             }
+    .col-m-5 {
+             width: 41.66%;
+             }
+    .col-m-6 {
+             width: 50%;
+             }
+    .col-m-7 {
+             width: 58.33%;
+             }
+    .col-m-8 {
+             width: 66.66%;
+             }
+    .col-m-9 {
+             width: 75%;
+             }
+    .col-m-10 {
+              width: 83.33%;
+              }
+    .col-m-11 {
+              width: 91.66%;
+              }
+    .col-m-12 {
+              width: 100%;
+              }
+     body{
+          max-width:768px;
+          }
+              
+
+}
+
+/* Media queries desktop */
+@media screen and (min-width: 768px) {
+    .col-1 {
+           width: 8.33%;
+           }
+    .col-2 {
+           width: 16.66%;
+           }
+    .col-3 {
+           width: 25%;
+           }
+    .col-4 {
+           width: 33.33%;
+           }
+    .col-5 {
+           width: 41.66%;
+           }
+    .col-6 {
+           width: 50%;
+           }
+    .col-7 {
+           width: 58.33%;
+           }
+    .col-8 {
+           width: 66.66%;
+           }
+    .col-9 {
+           width: 75%;
+           }
+    .col-10 {
+            width: 83.33%;
+            }
+    .col-11 {
+            width: 91.66%;
+            }
+    .col-12 {
+            width: 100%;
+            }
+            
+     body {
+	      font-family: 'Montserrat', sans-serif;
+	      font-weight:900;
+          margin:auto;
+          border-width:thick;
+     }  
+       
+}

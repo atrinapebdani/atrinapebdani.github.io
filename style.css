@@ -34,17 +34,18 @@ h3{
 
 /*Formats the body of the webpage section*/
 body {
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 300;
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 900;
      border:double;
      border-width:medium;
      background-color:#FFFFFF;
      max-width:960px;
      } 
+
  
 
 
-/*----------------------------Navigation Bar/Header------------------*/   
+/*----------------------------Navigation Bar------------------*/   
 /*Formats the navigation bar*/
 .menu ul {
        border:solid;
@@ -76,14 +77,11 @@ body {
 .menu ul li a:hover{
 	              color:white;
                   }
-
-/*Formats the header area*/ 
+                  
 #header{
      background-color:#CDCDCD;
     }
-
-/*----------------------------About Section------------------*/  
-
+/*----------------------------About Section------------------*/   
 /*Formats the about section*/
 #about{
        border-bottom:solid;
@@ -101,15 +99,13 @@ body {
        padding-bottom:20px;
       }
 
-/*Formats the profile image*/
 #profile-image{   
        width:100%;
        border:solid;
        border-width:thin;
        background-color:#CDCDCD;
        height:auto;
-      } 
-
+      }      
 /*Places a line underneath the work section*/
 #work{
       border-bottom:solid; 
@@ -141,7 +137,7 @@ body {
 /*----------------------------Footer Section------------------*/      
 .footer {
         background-color:#d5f5e3;
-	border:solid;
+        border:solid;
         border-width:thin;
         color: black;
         font-size: 12px;
@@ -153,13 +149,16 @@ body {
 
 /*------------------------Media Queries------------------*/
 /*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
-/*--Modifications made by me (Atrina Pebdani)--*/
 
 /* Media queries for mobile phones: */
 @media screen and (max-width: 600px) {
 	.menu ul li{
 		        float: none;
 	            }
+    .menu ul li a{
+                  padding: 5px;
+                  font-size:12px;
+                 }
     body{
          margin:0px; 
          min-width:300px;
@@ -171,16 +170,20 @@ body {
              border-bottom-width:thin;
              border-top-width:thin;
              }
-     #image{ display: block;
-             margin: auto;
-             width: 100%;
-      }
+     #image{
+            display: block;
+            margin: auto;
+            width: 100%;
+           }
+      p{
+        font-size:12px;
+       }
 
 }
 
-
 /* Media queries for tablets */
 @media only screen and (min-width: 600px)
+and (max-width:768px)
 {
     .col-m-1 {
              width: 8.33%;
@@ -220,13 +223,17 @@ body {
               }
      body{
           max-width:768px;
+          margin:auto;
           }
+     p{
+       font-size:14px;
+      }
               
 
 }
 
-/* Media queries for a desktop */
-@media screen and (min-width: 768px) {
+/* Media queries desktop */
+@media screen and (min-width: 768px){
     .col-1 {
            width: 8.33%;
            }
@@ -265,10 +272,11 @@ body {
             }
             
      body {
-	  font-family: 'Montserrat', sans-serif;
-	  font-weight:900;
+	      font-family: 'Montserrat', sans-serif;
+	      font-weight:900;
           margin:auto;
           border-width:thick;
-     }  
-       
+          background-color:yellow;
+     } 
 }
+

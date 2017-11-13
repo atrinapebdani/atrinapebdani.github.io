@@ -34,8 +34,8 @@ h3{
 
 /*Formats the body of the webpage section*/
 body {
-	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 300;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 300;
      border:double;
      border-width:medium;
      background-color:#FFFFFF;
@@ -44,7 +44,7 @@ body {
  
 
 
-/*----------------------------Navigation Bar------------------*/   
+/*----------------------------Navigation Bar/Header------------------*/   
 /*Formats the navigation bar*/
 .menu ul {
        border:solid;
@@ -76,11 +76,14 @@ body {
 .menu ul li a:hover{
 	              color:white;
                   }
-                  
+
+/*Formats the header area*/ 
 #header{
      background-color:#CDCDCD;
     }
-/*----------------------------About Section------------------*/   
+
+/*----------------------------About Section------------------*/  
+
 /*Formats the about section*/
 #about{
        border-bottom:solid;
@@ -98,13 +101,15 @@ body {
        padding-bottom:20px;
       }
 
+/*Formats the profile image*/
 #profile-image{   
        width:100%;
        border:solid;
        border-width:thin;
        background-color:#CDCDCD;
        height:auto;
-      }      
+      } 
+
 /*Places a line underneath the work section*/
 #work{
       border-bottom:solid; 
@@ -136,6 +141,8 @@ body {
 /*----------------------------Footer Section------------------*/      
 .footer {
         background-color:#d5f5e3;
+	border:solid;
+        border-width:thin;
         color: black;
         font-size: 12px;
         padding: 10px;
@@ -146,6 +153,7 @@ body {
 
 /*------------------------Media Queries------------------*/
 /*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
+/*--Modifications made by me (Atrina Pebdani)--*/
 
 /* Media queries for mobile phones: */
 @media screen and (max-width: 600px) {
@@ -217,7 +225,7 @@ body {
 
 }
 
-/* Media queries desktop */
+/* Media queries for a desktop */
 @media screen and (min-width: 768px) {
     .col-1 {
            width: 8.33%;
@@ -257,8 +265,8 @@ body {
             }
             
      body {
-	      font-family: 'Montserrat', sans-serif;
-	      font-weight:900;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight:900;
           margin:auto;
           border-width:thick;
      }  

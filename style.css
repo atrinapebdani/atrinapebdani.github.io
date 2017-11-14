@@ -41,7 +41,10 @@ body {
      background-color:#FFFFFF;
      max-width:960px;
      } 
-
+/*Formats the links clicked*/
+a:link, a:visited {
+    color: blue;
+}
  
 
 

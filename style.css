@@ -34,8 +34,8 @@ h3{
 
 /*Formats the body of the webpage section*/
 body {
-	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 900;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
      border:double;
      border-width:medium;
      background-color:#FFFFFF;
@@ -109,7 +109,8 @@ a:link, a:visited {
        border-width:thin;
        background-color:#CDCDCD;
        height:auto;
-      }      
+      }
+
 /*Places a line underneath the work section*/
 #work{
       border-bottom:solid; 
@@ -125,7 +126,8 @@ a:link, a:visited {
 
 /*----------------------------Contact Section------------------*/               
 #contact{
-         background-color:#CDCDCD; }
+         background-color:#CDCDCD; 
+	}
          
          
 #overall-objective{
@@ -153,12 +155,13 @@ a:link, a:visited {
 
 /*------------------------Media Queries------------------*/
 /*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
+/*--Modifications made by me (Atrina Pebdani)-------*/
 
 /* Media queries for mobile phones: */
 @media screen and (max-width: 600px) {
-	.menu ul li{
-		        float: none;
-	            }
+    .menu ul li{
+		float: none;
+	       }
     .menu ul li a{
                   padding: 5px;
                   font-size:12px;
@@ -276,8 +279,8 @@ and (max-width:768px)
             }
             
      body {
-	      font-family: 'Montserrat', sans-serif;
-	      font-weight:900;
+	  font-family: 'Montserrat', sans-serif;
+	  font-weight:900;
           margin:auto;
           border-width:thick;
      } 

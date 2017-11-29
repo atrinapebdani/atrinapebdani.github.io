@@ -24,8 +24,21 @@
 h1{
    text-align:center;
    background-color:#FFFFFF;
-   
+   padding-top:20px;
+   padding-bottom:0px;
+   position:static;
+   border-bottom:solid;
+   border-bottom:thin;
    }
+   
+h1:after
+    {
+    content:' ';
+    display:block;
+    border:solid;
+    border-width:thin;
+    margin-top:10px;
+}
 
 /*Formats all the h3 text*/
 h3{
@@ -36,8 +49,7 @@ h3{
 body {
      font-family: 'Montserrat', sans-serif;
      font-weight: 800;
-     border:double;
-     border-width:medium;
+
      background-color:#FFFFFF;
      max-width:960px;
      } 
@@ -50,48 +62,56 @@ a:link, a:visited {
 
 
 /*----------------------------Navigation Bar------------------*/   
-/*Formats the navigation bar*/
+/*Formats the  bar*/
+
+.menu{
+      width:100%;
+
+      }
+
+.menu a {
+  float:left;
+  display: block;
+}
+
 .menu ul {
-       border:solid;
-       border-width:thin;
+       overflow:hidden;
        list-style-type: none;
        overflow: hidden;
-       background-color: #d5f5e3 ;
        text-align:center;
-       position:relative;
-       margin:0px;
-       padding:0px;
-       
+       margin-right:auto;
+       background-color:white;
+       width:100%;
+       position:fixed;
+       padding-left:0;   
        }
-
-.menu ul li {
-	      float:left;
-          }
+       
 
 .menu ul li a {
             display: block;
             color: black;
             text-decoration: none;
-            padding:15px;   
-            border:thin;   
+            padding-right:25px;
+            padding-top:15px;
+            padding-bottom:15px;
+   
+            
             }
 
 
 /*Changes the text color of the navigation bar on hover*/
 .menu ul li a:hover{
-	              color:white;
+	              color:#D3D3D3;
                   }
-                  
-#header{
-     background-color:#CDCDCD;
-    }
+            
 /*----------------------------About Section------------------*/   
 /*Formats the about section*/
 #about{
-       border-bottom:solid;
-       border-bottom-width:thin;
+       margin-top:50px;
+       border:solid;
+       border-width: thin;
        text-align:center; 
-       background-color:#CDCDCD; 
+       background-color:#EFEFEF; 
        }  
   
 
@@ -101,43 +121,47 @@ a:link, a:visited {
 #image{   
        width:100%;
        padding-bottom:20px;
+       
       }
 
 #profile-image{   
        width:100%;
        border:solid;
        border-width:thin;
-       background-color:#CDCDCD;
+       margin-top:20px;
        height:auto;
       }
 
 /*Places a line underneath the work section*/
 #work{
-      border-bottom:solid; 
-      border-bottom-width:thin;
-      background-color:#CDCDCD;
+      border:solid;
+      border-width: thin;
+      background-color:#EFEFEF;
+      margin-top:50px;
       }
-
-/*Formats the projects view more button*/
-#projectbutton{
-               border-radius:25px;
-               text-align:center;
-               }
 
 /*----------------------------Contact Section------------------*/               
 #contact{
-         background-color:#CDCDCD; 
-	}
+        border:solid;
+        border-width: thin;
+        margin-top:50px;
+        background-color:#EFEFEF; 
+	    }
          
          
 #overall-objective{
-                   background-color:#CDCDCD;
+                   margin-top:50px;
+                   background-color:#EFEFEF;
                    }
+                   
+#overall-objective h2{
+                      padding-top:50px;
+                      }
 #tasks-completed{
-                 background-color:#CDCDCD;
+                 background-color:#EFEFEF;
                 }
 #design-result{
-               background-color:#CDCDCD;
+               background-color:#EFEFEF;
               }      
  
 /*----------------------------Footer Section------------------*/      
@@ -149,9 +173,89 @@ a:link, a:visited {
         font-size: 12px;
         padding: 10px;
         text-align: center;
+        margin-top:50px;
         }
 
+/* style social media icons */
+.footer .fa {
+	        padding: 10px;
+	        font-size: 15px;
+	        width: 35px;
+	        margin: 5px 2px;
+	        text-align: center;
+	        text-decoration: none;
+	        color: white;
+	        background-color: gray;
+	        border-radius: 50%;
+            }
 
+.footer .fa:hover {
+	              opacity: 0.7;
+                  }
+                  
+
+/* Formats the findings page */ 
+
+/*Formats the navigation bar for the findings page*/                
+.findings-menu{
+      width:100%;
+      }
+
+.findings-menu a {
+  float:left;
+  display: block;
+}
+
+.findings-menu ul {
+       overflow:hidden;
+       list-style-type: none;
+       overflow: hidden;
+       text-align:center;
+       margin-right:auto;
+       background-color:white;
+       width:100%;
+       padding-left:0;   
+       }
+       
+
+.findings-menu ul li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding-right:25px;
+            padding-top:15px;
+            padding-bottom:15px;            
+            }
+.findings-menu ul li a:hover{
+	                         color:#D3D3D3;
+                             }           
+                             
+#user-research{
+               border-bottom:solid; 
+               border-bottom-width:thin;
+                }
+#user-research h2{
+                  padding-top:25px;
+                  }
+
+#user-testing{
+               border-bottom:solid; 
+               border-bottom-width:thin;
+                }
+
+.findings{
+          background:#efefef;
+          border:solid; 
+          border-width:thin;
+          margin-top:50px;
+          }
+
+#findings-image{   
+              width:100%;
+              margin-top:25px;
+              border:solid;
+              border-width:thin;
+              }
 
 /*------------------------Media Queries------------------*/
 /*--Credit Due: https://www.w3schools.com/css/css_rwd_mediaqueries.asp--*/
@@ -159,9 +263,11 @@ a:link, a:visited {
 
 /* Media queries for mobile phones: */
 @media screen and (max-width: 600px) {
+
     .menu ul li{
-		float: none;
-	       }
+		        float: none;
+                display:inline-block
+	            }
     .menu ul li a{
                   padding: 5px;
                   font-size:12px;
@@ -171,12 +277,7 @@ a:link, a:visited {
          min-width:300px;
          border:none;
          }
-    .menu ul{
-             border-top:solid;
-             border-bottom:solid;
-             border-bottom-width:thin;
-             border-top-width:thin;
-             }
+
      #image{
             display: block;
             margin: auto;
@@ -279,10 +380,9 @@ and (max-width:768px)
             }
             
      body {
-	  font-family: 'Montserrat', sans-serif;
-	  font-weight:900;
+	      font-family: 'Montserrat', sans-serif;
+	      font-weight:900;
           margin:auto;
           border-width:thick;
      } 
 }
-
